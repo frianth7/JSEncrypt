@@ -1,0 +1,20 @@
+<div nz-row>
+	<div nz-col [nzSpan]='8'>
+		<textarea [(ngModel)]="plainText" ></textarea>
+	</div>
+	<ul nz-col [nzSpan]='8' class="buttonGroup">
+		<li>
+			<button nz-button [nzType]="'primary'" (click)="encrypt()">
+				<span>Inkrip</span>
+			</button>
+		</li>
+		<li>
+			<button nz-button [nzType]="'primary'" (click)='decrypt()'>
+				<span>Dekrip</span>
+			</button>
+		</li>
+	</ul>
+	<div nz-col [nzSpan]='8'>
+		<textarea [(ngModel)]="cypherText" ></textarea>
+	</div>
+</div>
